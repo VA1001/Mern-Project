@@ -1,0 +1,220 @@
+.profile {
+    padding: 40px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .profile h2 {
+    font-size: 1.75rem;
+    color: #008080;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-error {
+    color: #FF6F00;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .profile-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+  }
+  
+  .profile-card h3 {
+    font-size: 1.375rem;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .user-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666666;
+  }
+  
+  .user-info p strong {
+    color: #333333;
+  }
+  
+  .edit-button {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #008080;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-button, .cancel-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .cancel-button {
+    background-color: #666666;
+  }
+  
+  .cancel-button:hover {
+    background-color: #555555;
+  }
+  
+  .order-history {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+  }
+  
+  .order-history h3 {
+    font-size: 1.375rem;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .no-orders {
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th, .order-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .order-table th {
+    background-color: #008080;
+    color: white;
+  }
+  
+  .order-table td {
+    color: #666666;
+  }
+  
+  .profile-loading {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #666666;
+    padding: 40px 0;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .profile {
+      padding: 20px 0;
+    }
+  
+    .profile h2 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .profile-card, .order-history {
+      min-width: 100%;
+      padding: 15px;
+    }
+  
+    .profile-card h3, .order-history h3 {
+      font-size: 1.25rem;
+    }
+  
+    .user-info p, .no-orders {
+      font-size: 0.9rem;
+    }
+  
+    .edit-button, .save-button, .cancel-button {
+      font-size: 0.9rem;
+    }
+  
+    .form-group label, .form-input {
+      font-size: 0.9rem;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .order-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .order-table th, .order-table td {
+      font-size: 0.8rem;
+      padding: 8px;
+      min-width: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile {
+      padding: 15px 0;
+    }
+  
+    .profile h2 {
+      font-size: 1.25rem;
+    }
+  
+    .order-table th, .order-table td {
+      font-size: 0.75rem;
+    }
+  }

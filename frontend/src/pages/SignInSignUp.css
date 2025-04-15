@@ -1,0 +1,81 @@
+/* frontend/src/styles/SignInSignUp.css */
+.signin-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #008080; /* Teal background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signin-signup-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .signin-signup-form h2 {
+    color: #FF6F00; /* Saffron heading */
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .signin-signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .signin-signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6F00; /* Saffron button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signin-signup-form button:hover {
+    background-color: #e65c00; /* Darker saffron on hover */
+  }
+  
+  .signin-signup-form p {
+    color: #333333;
+    margin-top: 15px;
+  }
+  
+  .signin-signup-form p a {
+    color: #FF6F00;
+    text-decoration: none;
+  }
+  
+  .signin-signup-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .signin-signup-form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .signin-signup-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .signin-signup-form button {
+      padding: 10px;
+    }
+  }
